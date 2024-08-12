@@ -1,0 +1,32 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <p>
+            Welcome to my portfolio! I am Jesse Akila, a part time 😎😎
+            web developer with some years of experience in web development.
+            My goal is to make the web user friendly 
+            to every human by making simple and easy to use sites.
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/jesse1.jpg' %}" class="align-right"/>
+        </p>
+        <h2>Services Offered</h2>
+        <p>Web development of any kind based on your imagination 
+            depending on my availability 😂😅😅...
+        </p>
+        <h2>Contact Me</h2>
+        <p>Ready to start your next project? Reach out to me via <a href="mailto:jesseakilaayams@gmail.com">MAIL</a> 
+            at <b><i>jesseakilaayams@gmail.com</i></b> or through the contact form 
+            <a href="{% url 'portfolio:contact' %}#form"><em>here</em></a> and my <a href="#socials">Socials</a>. 
+            Let's turn your ideas into reality!.
+        </p>
+    </body>
+</html>
+
+{% endblock content %}

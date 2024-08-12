@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'portfolio/style.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="transbox"></div>
+            <div class="logo">
+                {% load static %}
+                <img src=" {% static 'portfolio/pics/anarchy.png' %}"
+                alt="logo" title="logo" class="logo"/>
+            </div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'portfolio:index' %}">HOME</a></li> 
+                        <li><a href="{% url 'portfolio:about' %}">ABOUT</a></li>
+                        <li><a href="{% url 'portfolio:project' %}">PROJECTS</a></li> 
+                        <li><a href="{% url 'portfolio:pricing' %}">PRICING</a></li>
+                        <li><a href="{% url 'portfolio:contact' %}">CONTACT</a></li>
+                </ul>
+                </nav>
+            </header>
+        </div>
+    </body>
+</html>
+
+{% block content %}{% endblock content %}
+<footer id="socials">
+    <p>@Jayko 2000 & Forever...</p>
+    <div class="socials">
+        <a href="https://wa.me/+2348129241128" target="_blank" class="socials">
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/whatsapp.png' %}" alt="whatsapp" title="whatsapp" /> Whatsapp
+        </a> - 
+        <a href="https://www.facebook.com/jesse.akila.92/" target="_blank" class="socials">
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/facebook.png' %}" alt="facebook" title="facebook" /> Facebook
+        </a> - 
+        <a href="https://x.com/akila_jesse" target="_blank" class="socials">
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/twitter.png' %}" alt="x" title="x" /> X (Formally Twitter)
+        </a>
+    </div>
+</footer>

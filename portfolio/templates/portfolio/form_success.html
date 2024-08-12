@@ -1,0 +1,16 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title>Submitted</title>
+    </head>
+    <body>
+        <h2><i>Form Submitted successfully...</i></h2>
+        <p><a href="{% url 'portfolio:contact' %}">Fill form again</a></p>
+        <p><a href="{% url 'portfolio:index' %}">Go Home</a></p>
+    </body>
+</html>
+
+{% endblock content %}

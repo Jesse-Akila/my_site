@@ -1,0 +1,39 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title>Pricing</title>
+    </head>
+    <body>
+        <h1>Pricing</h1>
+        <p>Welcome to our pricing page! we offer flexible 
+            pricing options to suite your needs.
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/pricing.jpeg' %}" class="align-right"/>
+        </p>
+        <h2>Package and Services</h2>
+        <p>Prices varies depending on complexity of the project. </br>
+            Prices: Free😁😁(When I'm free) and Paid 🤑🤑...
+        </p>
+        <h2>Custom Solutions</h2>
+        <p>We also offer custom solutions tailored to your specific 
+            needs. Please contact me via <a href="mailto:jesseakilaayams@gmail.com">MAIL</a>, 
+            <a href="{% url 'portfolio:contact' %}#form">Contact Form</a> or my <a href="#socials">socials</a> 
+            to discuss your requirements and get a personalised quote.
+        </p>
+        <h2>How It Works</h2>
+        <ol>
+            <li>Reach out to us at <a href="{% url 'portfolio:contact' %}#form">jesseakilaayams@gmail.com</a> to get started 
+                or for any inquiries.
+            </li>
+            <li>Get started: once we understand your requirements, 
+                we will kickstart the process to deliver exceptional 
+                results.
+            </li>
+        </ol>
+    </body>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,197 @@
+header {
+    background-color:  rgb(27, 245, 27);
+    color:  rgb(14, 83, 14);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: fixed;
+    right: 35px;
+    width: 40%;
+    font-size: 120%;
+}
+
+div.logo {
+    position: fixed;
+}
+
+html {
+    background-image:  url("./pics/pattern.jpg");
+}
+
+body {
+    background-color: rgb(9, 10, 9);
+    opacity: 0.8;
+    color: rgb(168, 243, 243);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.3em;
+    padding: 3px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-color: rgb(6, 29, 6);
+    border-style: ridge;
+    border-radius: 10px;
+    height: auto;
+}
+
+img.align-right {
+    float: right;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}
+
+img.logo {
+    height: 70%;
+    width: 70%;
+}
+
+
+p, ul, ol {
+    font-size: 120%;
+}
+
+h1, h2 {
+    color: rgb(27, 245, 27);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+    border-style: outset;
+    border-color: rgb(27, 245, 27);
+    border-radius: 20px;
+    width: 60%;
+    text-align: center;
+    margin-top: 195px;
+}
+
+h2 {
+    font-style: italic;
+}
+
+a {
+    color: rgb(14, 83, 14);
+    background-color:  rgb(27, 245, 27);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+a.socials {
+    color: rgb(53, 211, 211);
+    background-color: rgb(17, 17, 17);
+}
+
+a.socials:visited {
+    color:aqua;
+}
+
+a.socials:hover {
+    background-color: rgb(46, 43, 43);
+}
+
+a:visited {
+    color: black;
+}
+a:hover {
+    color: blue;
+    background-color: rgb(177, 243, 177);
+}
+
+a:active {
+    background-color:  rgb(83, 243, 83);
+    color: rgb(56, 52, 52);
+}
+
+footer {
+    background-color:  rgb(27, 245, 27);
+    color:  black;
+    margin-top: auto;
+    text-align: center;
+    font-size: 110%;
+    padding-bottom: 20px;
+}
+
+div.socials ul.whatsapp li {
+}
+
+footer, header {
+    border-style: outset;
+    border-color: rgb(14, 83, 14);
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+ol {
+    list-style-type: lower-greek;
+}
+
+ul.whatsapp {
+    list-style-image: url("./pics/whatsapp.png");
+    margin-left: 10px;
+}
+
+ul.facebook {
+    list-style-image: url("./pics/facebook.png");
+    margin-left: 10px;
+}
+
+ul.x {
+    list-style-image: url("./pics/twitter.png");
+    margin-left: 10px;
+}
+
+input, textarea {
+    font-size: 120%;
+    color: rgb(27, 245, 27);
+    background-color: rgb(46, 43, 43);
+    border: 2px solid rgb(27, 245, 27);
+    border-radius: 5px;
+    display: block;
+    padding: 5px, 5px, 5px, 30px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+input:focus, textarea:focus {
+    background-color: rgb(61, 57, 57);
+    border: 2px solid rgb(27, 245, 27);
+}
+
+button {
+    color: rgb(17, 17, 17);
+    background-color: rgb(27, 245, 27);
+    text-shadow: 0px 1px 1px black;
+    border: 2px outset ;
+    border-color: rgb(156, 241, 156);
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+button:hover {
+    background-color: rgb(61, 57, 57);
+    color: rgb(27, 245, 27);
+    border: 2px inset rgb(27, 245, 27);
+}
+
+button:active {
+    color: rgb(164, 241, 164);
+    background-color: rgb(17, 17, 17);
+    border-style: ridge;
+}

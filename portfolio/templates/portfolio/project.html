@@ -1,0 +1,39 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title>Projects</title>
+    </head>
+    <body>
+        <h1>Projects</h1>
+        <p>Welcome to my Projects page! Explore some of my recent 
+            work and projects to get a glimpse of what I can offer.
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/project.jpeg' %}" class="align-right"/>
+        </p>
+        <h2>Projects</h2>
+        <ul>
+            <li>Currently, No Public Projects available.🤡🤡👀</li>
+        </ul>
+        <h2>Project Process</h2>
+        <ol>
+            <li>Discussing project requirements with client and 
+                defining goals.
+            </li>
+            <li>Planning and Design</li>
+            <li>Development using suitable technologies and best practices.</li>
+            <li>Testing and Refinement</li>
+            <li>Delivery and Support</li>
+        </ol>
+        <h2>Get In Touch</h2>
+        <p>Interested in starting a project together? Contact me 
+            via <a href="mailto:jesseakilaayams@gmail.com">MAIL</a>, 
+            <a href="{% url 'portfolio:contact' %}#form">Contact Form</a> or my <a href="#socials">socials</a> 
+            to discuss your ideas and requirements.
+        </p>
+    </body>
+</html>
+
+{% endblock content %}

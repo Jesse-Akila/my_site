@@ -1,0 +1,44 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+
+<html>
+    <head>
+        <title>About</title>
+    </head>
+    <body>
+        <h1>About</h1>
+        <p>Welcome to my About page! I am Jesse Akila, a 
+            leisure web developer based in Bauchi. With a passion 
+            for web development, I bring some years of experience and 
+            expertise to every project I undertake.
+            {% load static %}
+            <img src=" {% static 'portfolio/pics/jesse.jpg' %}" class="align-right"/>
+        </p>
+        <h2>My Journey</h2>
+        <p>My journey in the tech industry began in 2019. Since then I had the privilege of working 
+            with my own company😎😎 on private projects, where I honed 
+            my web developement skills and expertise.
+        </p>
+        <h2>My Approach</h2>
+        <p>I believe in simplicity and perfect functionality
+             of design. Whether it is a large or small scale 
+             website, my focus is always on delivering quality and 
+             optimal solutions that exceeds expectations.
+        </p>
+        <h2>Why Choose Me</h2>
+        <ul>
+            <li>Experience</li>
+            <li>Expertise</li>
+            <li>Client-Centric</li>
+            <li>Innovative Solutions</li>
+        </ul>
+        <h2>Follow My Journey</h2>
+        <p>Stay updated on my latest projects, industry insights, 
+            by following me on my <a href="#socials">Social Media Platforms.</a> </br> Thank you for visiting my 
+            About page. I look forward to connecting with you!.
+        </p>
+    </body>
+</html>
+
+{% endblock content %}
